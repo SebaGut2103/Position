@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posiciones</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin:2rem;
+            font-size: 2rem;
+            font-family: sans-serif;
+            background-color: black;
+            height: 200vh;
+            
+        }
+        h1{
+            color: white;
+            font-size: 3rem;
+            text-align: center;
+
+        }
+        div{
+            border-radius: 5px;
+        }
+        .static{
+            background-color: #ddd;
+
+        }
+        .relative{
+            background-color: #fc9191;
+        }
+        .absolute{
+            background-color: #a8d5e2;
+        }
+        .fixed{
+            background-color: #81c476;
+        }
+        .sticky{
+            background-color: #e1e1ac;
+        }
+        .static{
+            position: static;
+        }
+        .relative {
+            position: relative;
+            top: 10px;
+            left: 10px;
+        }
+        .absolute{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        .fixed{
+            position: fixed;
+            top: 50vh;
+        }
+        .sticky{
+            position: sticky;
+            
+        }
+        .sticky{
+            position: relative;
+            z-index: 1;
+        }
+        .parent{
+            position: relative;
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <h1>Posiciones en CSS</h1>
+    <div class="parent">
+    <div class="static">static</div>
+    <div class="relative">relative</div>
+    <div class="absolute">absolute</div>
+    <div class="fixed">fixed</div>
+    <div class="sticky">sticky</div>
+</div>
+</body>
+</html>
